@@ -15,15 +15,19 @@
         color: var(--section-colour);
         font-size: 16px;
         background-color: var(--white-base);
-        margin: 0 auto;
-    }
-
-    *{
-        outline: 2px solid lime;
     }
 
     ul{
         list-style-type: none;
+    }
+
+    ul,h1,h2,h3,h4,h5,h6,p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    ul{
+        padding-left: 0;
     }
 
     a{
@@ -31,6 +35,20 @@
         color: inherit;
     }
 
+    .head-box{
+        background-color: tomato;
+    }
+
+    .conteiner{
+        width: 1128px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lime;
+    }
+
+    nav{
+        display: block;
+    }
     .color-logo{
         color: var(--active-button);
     }
@@ -41,13 +59,16 @@
         font-family: 'Raleway';
         font-size: 18px;
         line-height: 1.33;
-        display: flex;
         align-items: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        display: inline-block;
     }
     footer>.logo{
         color: var(--accent);
+        margin-bottom: 16px;
+        margin-left: 156px;
+        padding-top: 100px;
     }
 
     .link-nav{
@@ -67,6 +88,10 @@
         font-weight: 400;
         letter-spacing: 0.02em;
         color: var(--accent);
+        width: 264px;
+        height: 72px;
+        margin-left: 156px;
+        padding-bottom: 188px;
     }
 
     .contatc-link{
@@ -82,13 +107,26 @@
         color: var(--active-button);
     }
 
+    .banner{
+        text-align: center;
+    }
+
     .banner-title{
         font-size: 56px;
         line-height: 1.07;
-        text-align: center;
         letter-spacing: 0.02em;
         color: var(--white-base);
+        margin-bottom: 48px;
+        /* background-color: tomato; */
+
     }
+
+    .section{
+        background-color: tomato;
+
+    }
+
+
 
     .section-title{
         font-size: 36px;
@@ -104,6 +142,7 @@
         letter-spacing: 0.02em;
         font-weight: 500;
         text-align: center;
+        margin-bottom: 8px;
     }
     .section-text{
         line-height: 1.5;
@@ -126,10 +165,13 @@
         color: var(--white-base);
         cursor: pointer;
         line-height: 1.5; 
-        display: flex;
-        align-items: center;
         text-align: center;
         letter-spacing: 0.04em;
+        border-radius: 4px;
+        border-width: 0px;
+        padding: 16px 32px;
+        min-width: 169px;
+        display: inline-block;
     }
 
     .mainpage-button:hover,
