@@ -14,7 +14,12 @@
         font-family: 'Roboto',sans-serif;
         color: var(--section-colour);
         font-size: 16px;
-        background-color: var(--white-base)
+        background-color: var(--white-base);
+        margin: 0 auto;
+    }
+
+    *{
+        outline: 2px solid lime;
     }
 
     ul{
