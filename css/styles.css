@@ -36,14 +36,14 @@
     }
 
     .head-box{
-        background-color: tomato;
+        /* background-color: tomato; */
     }
 
     .conteiner{
         width: 1128px;
         margin-left: auto;
         margin-right: auto;
-        background-color: lime;
+        /* background-color: lime; */
     }
 
     nav{
@@ -108,17 +108,21 @@
     }
 
     .banner{
-        text-align: center;
+      text-align: center;
+      padding-top: 188px;
+      padding-bottom: 292px;
     }
 
     .banner-title{
         font-size: 56px;
         line-height: 1.07;
         letter-spacing: 0.02em;
-        color: var(--white-base);
+        color: var(--white-base); 
+        width: 496px;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 48px;
         /* background-color: tomato; */
-
     }
 /* 
     .section{
