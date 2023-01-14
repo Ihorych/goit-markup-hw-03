@@ -36,6 +36,7 @@
     }
 
     .head-box{
+        display: flex;
         /* background-color: tomato; */
     }
 
@@ -43,7 +44,15 @@
         width: 1128px;
         margin-left: auto;
         margin-right: auto;
+        display: flex;
+        align-items: center;
         /* background-color: lime; */
+    }
+    
+    .header-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
 
     nav{
@@ -188,10 +197,15 @@
         border: 1px solid var(--accent);
         border-radius: 4px;
         font-weight: 500;
+        min-width: 78px;
     }
     .selection-button:hover,
     .selection-button:focus{
         background-color: var(--active-button);
         color: var(--cloud-bckground); 
+    }
+
+    .button-list{
+        display: flex;
     }
     
