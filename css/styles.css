@@ -37,6 +37,8 @@
 
     .head-box{
         display: flex;
+        width: 1128px;
+        margin: 0 auto;
         /* background-color: tomato; */
     }
 
@@ -84,8 +86,20 @@
     .work-list{
         /* background-color: lime; */
         flex-direction: column;
+        column-gap: 24px;
     }
     
+    .conteiner-portfolio    {
+        width: 1128px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 120px;
+        /* background-color: lime; */
+    }
+
     .header-nav{
         display: flex;
         justify-content: space-between; 
@@ -118,13 +132,18 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         display: inline-block;
-        margin-left: 157px;
         margin-right: 76px;
     }
-    footer>.logo{
+
+    .footer-conteiner{
+        width: 1128px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-conteiner>.logo{
         color: var(--accent);
         margin-bottom: 16px;
-        margin-left: 156px;
         padding-top: 100px;
     }
 
@@ -147,7 +166,6 @@
         color: var(--accent);
         width: 264px;
         height: 72px;
-        margin-left: 156px;
         padding-bottom: 188px;
     }
 
@@ -252,9 +270,28 @@
 
     .button-list{
         display: flex;
+        margin-bottom: 140px;
     }
     
     .benefits-list{ 
         display: flex;
         margin-top: 120px;
     }
+
+    .portfolio-item{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 14px;
+        row-gap: 14px;
+        margin-bottom: 120px;
+    }
+
+    .portfolio-item > li{
+        border: 1px solid var(--accent);
+    }
+
+    /* Need to add
+    1. Change cards in portfolio
+    2.Give text display - left (text alighn) in cards and in section benefits list
+    3.Give distnance between bunnons on portfolio
+    */
