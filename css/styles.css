@@ -51,9 +51,20 @@
     
     .header-nav{
         display: flex;
-        align-items: center;
-        justify-content: space-around;
+        justify-content: space-between; 
+        /* background-color: lime; */
     }
+
+    .header-nav > .header-link-item:not(:last-child){
+        margin-right: 40px;
+    }
+
+    .header-nav > .header-nav-item:not(:last-child){
+        margin-right: 40px;
+        /* background-color: navy; */
+    }
+
+
 
     nav{
         display: block;
@@ -72,6 +83,8 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         display: inline-block;
+        margin-left: 157px;
+        margin-right: 76px;
     }
     footer>.logo{
         color: var(--accent);
