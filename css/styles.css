@@ -58,7 +58,6 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-top: 120px;
         /* background-color: lime; */
     }
 
@@ -88,6 +87,27 @@
         flex-direction: column;
         column-gap: 24px;
     }
+
+    .taem-block{
+        outline: 1px solid inherit;
+        border-radius: 0px 0px 4px 4px;
+        background-color: var(--white-base);
+    }
+
+    .taem-block > h3{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        margin-top: 32px;
+    }
+    .taem-block > p{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 32px;
+    }
+
     
     .conteiner-portfolio    {
         width: 1128px;
@@ -102,22 +122,30 @@
 
     .header-nav{
         display: flex;
-        justify-content: space-between; 
+        margin-left: auto;
         /* background-color: lime; */
     }
 
-    .header-nav > .header-link-item:not(:last-child){
-        margin-right: 40px;
+    .header-link{
+        display: flex;
+        margin-right: auto;
+        /* background-color: lime; */
     }
-
+  
     .header-nav > .header-nav-item:not(:last-child){
         margin-right: 40px;
         /* background-color: navy; */
-    }
+    } 
+
+    .header-link > .header-link-item:not(:last-child){
+        margin-right: 40px;
+        /* background-color: navy; */
+    } 
 
     nav{
         display: block;
     }
+
     .color-logo{
         color: var(--active-button);
     }
@@ -207,6 +235,7 @@
         letter-spacing: 0.02em;
         text-transform: capitalize;
         margin-bottom: 72px;
+        margin-top: 120px;
     }
 
     .section-subtitle{
@@ -214,15 +243,18 @@
         line-height: 1.2;
         letter-spacing: 0.02em;
         font-weight: 500;
-        text-align: center;
+        text-align: left;
         margin-bottom: 8px;
+        padding-left: 16px;
+        margin-top: 32px;
     }
     .section-text{
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--text-discription);
-        text-align: center;
+        text-align: left;
         letter-spacing: 0.02em;
+        padding-left: 16px; 
     }
 
     .banner,footer{
@@ -260,8 +292,13 @@
         border: 1px solid var(--accent);
         border-radius: 4px;
         font-weight: 500;
-        min-width: 78px;
+        min-width: 69px;
+        min-height: 48px;
+        display: flex;
+        padding: 12px 24px;
+        margin-right: 24px;
     }
+
     .selection-button:hover,
     .selection-button:focus{
         background-color: var(--active-button);
@@ -273,6 +310,10 @@
         margin-bottom: 140px;
     }
     
+    .last{
+        margin-right: 0px;
+    }
+
     .benefits-list{ 
         display: flex;
         margin-top: 120px;
@@ -288,7 +329,13 @@
 
     .portfolio-item > li{
         border: 1px solid var(--accent);
+        padding-bottom: 32px;
     }
+
+    /* .item-image{
+        margin-bottom: 32px;
+    } */
+
 
     /* Need to add
     1. Change cards in portfolio
