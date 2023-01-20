@@ -35,56 +35,48 @@
         color: inherit;
     }
 
-    .head-box{
-        display: flex;
-        width: 1128px;
-        margin: 0 auto;
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .header{
+       padding: 24px 0;
+       display: flex;
         /* background-color: tomato; */
     }
 
     .conteiner{
-        width: 1128px;
+        width: 1158px;
         margin-left: auto;
         margin-right: auto;
-        display: flex;
-        align-items: center;
+        padding: 0 15px;
         /* background-color: lime; */
     }
-
-    .conteiner-work{
-        width: 1128px;
-        margin-left: auto;
-        margin-right: auto;
+    
+    .header-conteiner{
         display: flex;
         align-items: center;
-        flex-direction: column;
-        /* background-color: lime; */
     }
 
-    .conteiner-work > .work-list{
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 240px;
-    }
-
-    section > .conteiner-team{
-        width: 1128px;
-        margin-left: auto;
-        margin-right: auto;
+    .navigation{
         display: flex;
         align-items: center;
-        flex-direction: column;
     }
 
-    .conteiner-team > .work-list{
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 120px;
+    .section{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .address{
+        margin-left: auto;
     }
 
     .work-list{
         /* background-color: lime; */
-        flex-direction: column;
+        display: flex;
         column-gap: 24px;
     }
 
@@ -110,38 +102,26 @@
 
     
     .conteiner-portfolio    {
-        width: 1128px;
-        margin-left: auto;
-        margin-right: auto;
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-top: 120px;
         /* background-color: lime; */
     }
 
     .header-nav{
         display: flex;
         margin-left: auto;
+        gap: 40px;
         /* background-color: lime; */
     }
 
     .header-link{
+        margin-left: 76px;
         display: flex;
-        margin-right: auto;
+        gap: 40px;
         /* background-color: lime; */
     }
   
-    .header-nav > .header-nav-item:not(:last-child){
-        margin-right: 40px;
-        /* background-color: navy; */
-    } 
-
-    .header-link > .header-link-item:not(:last-child){
-        margin-right: 40px;
-        /* background-color: navy; */
-    } 
-
     nav{
         display: block;
     }
@@ -160,19 +140,19 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         display: inline-block;
-        margin-right: 76px;
     }
 
     .footer-conteiner{
-        width: 1128px;
+        width: 1158px;
         margin-left: auto;
         margin-right: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     .footer-conteiner>.logo{
         color: var(--accent);
         margin-bottom: 16px;
-        padding-top: 100px;
     }
 
     .link-nav{
@@ -194,7 +174,6 @@
         color: var(--accent);
         width: 264px;
         height: 72px;
-        padding-bottom: 188px;
     }
 
     .contatc-link{
@@ -211,9 +190,9 @@
     }
 
     .banner{
-      text-align: center;
-      padding-top: 188px;
-      padding-bottom: 292px;
+        text-align: center;
+        padding-top: 188px;
+        padding-bottom: 188px;
     }
 
     .banner-title{
@@ -235,7 +214,6 @@
         letter-spacing: 0.02em;
         text-transform: capitalize;
         margin-bottom: 72px;
-        margin-top: 120px;
     }
 
     .section-subtitle{
@@ -245,25 +223,21 @@
         font-weight: 500;
         text-align: left;
         margin-bottom: 8px;
-        padding-left: 16px;
-        margin-top: 32px;
     }
     .section-text{
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--text-discription);
-        text-align: left;
         letter-spacing: 0.02em;
-        padding-left: 16px; 
     }
 
     .banner,footer{
         background-color: var(--section-colour);
-        flex-direction: column;
     }
 
     .team{
         background-color: var(--cloud-bckground);
+        margin-top: 120px;
     }
 
     button{
@@ -296,7 +270,6 @@
         min-height: 48px;
         display: flex;
         padding: 12px 24px;
-        margin-right: 24px;
     }
 
     .selection-button:hover,
@@ -307,16 +280,12 @@
 
     .button-list{
         display: flex;
-        margin-bottom: 140px;
-    }
-    
-    .last{
-        margin-right: 0px;
+        gap: 24px;
     }
 
     .benefits-list{ 
         display: flex;
-        margin-top: 120px;
+        gap: 24px;
     }
 
     .portfolio-item{
@@ -325,6 +294,7 @@
         column-gap: 14px;
         row-gap: 14px;
         margin-bottom: 120px;
+        max-width: 1158px;
     }
 
     .portfolio-item > li{
@@ -332,13 +302,10 @@
         padding-bottom: 32px;
     }
 
-    /* .item-image{
+    .portfolio-text{
+        padding-left: 16px;
+    }
+
+    .item-image{
         margin-bottom: 32px;
-    } */
-
-
-    /* Need to add
-    1. Change cards in portfolio
-    2.Give text display - left (text alighn) in cards and in section benefits list
-    3.Give distnance between bunnons on portfolio
-    */
+    }
