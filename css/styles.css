@@ -43,7 +43,6 @@
 
     .header{
        padding: 24px 0;
-       display: flex;
         /* background-color: tomato; */
     }
 
@@ -84,6 +83,7 @@
         outline: 1px solid inherit;
         border-radius: 0px 0px 4px 4px;
         background-color: var(--white-base);
+        padding-bottom: 32px;
     }
 
     .taem-block > h3{
@@ -97,15 +97,6 @@
         padding: 0px;
         text-align: center;
         margin-top: 8px;
-        margin-bottom: 32px;
-    }
-
-    
-    .conteiner-portfolio    {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        /* background-color: lime; */
     }
 
     .header-nav{
@@ -142,17 +133,13 @@
         display: inline-block;
     }
 
-    .footer-conteiner{
-        width: 1158px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-    .footer-conteiner>.logo{
+    .logo-footer{
         color: var(--accent);
-        margin-bottom: 16px;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
     }
 
     .link-nav{
@@ -165,6 +152,11 @@
     .link-nav:hover,
     .link-nav:focus{
         color: var(--active-button);
+    }
+
+    .footer{
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     .footer-text{
@@ -193,6 +185,10 @@
         text-align: center;
         padding-top: 188px;
         padding-bottom: 188px;
+    }
+
+    .about{
+        padding-top: 0px;
     }
 
     .banner-title{
@@ -229,6 +225,7 @@
         letter-spacing: 0.02em;
         color: var(--text-discription);
         letter-spacing: 0.02em;
+
     }
 
     .banner,footer{
@@ -237,7 +234,6 @@
 
     .team{
         background-color: var(--cloud-bckground);
-        margin-top: 120px;
     }
 
     button{
@@ -281,6 +277,8 @@
     .button-list{
         display: flex;
         gap: 24px;
+        justify-content: center;
+        margin-bottom: 72px;
     }
 
     .benefits-list{ 
@@ -288,24 +286,24 @@
         gap: 24px;
     }
 
-    .portfolio-item{
+    .benefits-point{
+        width: 264px;
+    }
+
+    .portfolio-list{
         display: flex;
         flex-wrap: wrap;
-        column-gap: 14px;
-        row-gap: 14px;
-        margin-bottom: 120px;
-        max-width: 1158px;
+        column-gap: 24px;
+        row-gap: 48px;
     }
 
-    .portfolio-item > li{
+    .portfolio-list > li{
         border: 1px solid var(--accent);
-        padding-bottom: 32px;
+        flex-basis: calc((100% - 48px) / 3)
     }
 
-    .portfolio-text{
+    .portfolio-subtitle{
         padding-left: 16px;
-    }
-
-    .item-image{
-        margin-bottom: 32px;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
