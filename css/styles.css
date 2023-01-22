@@ -17,6 +17,20 @@
         background-color: var(--white-base);
     }
 
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+
     ul{
         list-style-type: none;
     }
@@ -166,6 +180,7 @@
         color: var(--accent);
         width: 264px;
         height: 72px;
+        margin-top: 16px;
     }
 
     .contatc-link{
@@ -272,6 +287,10 @@
     .selection-button:focus{
         background-color: var(--active-button);
         color: var(--cloud-bckground); 
+    }
+
+    .portfolio{
+        padding-top: 96px;
     }
 
     .button-list{
